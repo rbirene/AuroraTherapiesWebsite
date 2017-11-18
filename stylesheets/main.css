@@ -7,8 +7,72 @@ body{
   font: 16px/24px 'Work Sans', sans-serif;
   color: #464646;
   overflow-x: hidden;
+  background-color: #fff;
 }
 
+button{
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+/*NAV*/
+.logo{
+  height: 100px;
+}
+
+.navCarouselContainer{
+  position: relative;
+}
+
+nav{
+  padding: 10px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+nav a{
+  /*color: #464646;*/
+  color: #fff;
+  transition: 0.2s;
+  margin: 5px 0 0 0;
+}
+
+nav a:hover{
+  color: #78c2ec;
+}
+
+.dropdown-menu{
+  border: none;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+/*FOOTER*/
+footer{
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding: 60px 0;
+  background-color: #464646;
+  color: #fff;
+}
+
+footer a{
+  color: #fff;
+  transition: 0.2s;
+}
+
+footer a:hover{
+  color: #78c2ec;
+}
+
+/*SECTIONS*/
 .sectionIntro{
   padding: 100px 0;
 }
@@ -30,35 +94,52 @@ body{
 }
 
 .sectionSpa, .sectionRestaurant{
-  background: #131e28;
+  background: #f7f7f7;
+}
+
+.sectionOffers{
+  padding: 80px 0;
+}
+
+.sectionOffersBtn{
+  border-radius: 3px;
+  background-color: #78c2ec;
+  border: none;
+  padding: 5px 20px;
   color: #fff;
-}
-
-h1, h2, h3{
-  font-family: 'Ubuntu', sans-serif;
-}
-
-h1{
-  font-size: 3rem;
-}
-
-/*NAV*/
-nav{
-  padding: 10px 0;
-  font-size: 1.1rem;
-}
-
-nav a{
-  color: #464646;
   transition: 0.2s;
-  margin: 5px 0 0 0;
 }
 
-nav a:hover{
-  color: #95ad3c;
+.sectionOffersBtn:hover{
+  background-color: #464646;
 }
 
-.carouselIndicators{
+/*LARGE + XLARGE*/
+@media only screen and (min-width: 992px){
+
+  #mobNav{
+    display: none;
+  }
+
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .contentSm{
+    display: none;
+  }
+
+  .sectionIntro{
+    position: relative;
+  }
+
+  .carouselIndicators{
+  position: absolute;
+  bottom: 20px;
   cursor: pointer;
   width: 13px;
   height: 13px;
@@ -72,26 +153,92 @@ nav a:hover{
   background-color: #95ad3c;
 }
 
-.carousel-caption{
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  bottom: 40%;
-  left: 5px;
+.carouselIndicator1{
+  transform: translate(-200%, -50%);
 }
 
-.carousel-caption h3{
-  font-size: 5rem;
+.carouselIndicator2{
+  transform: translate(-50%, -50%);
 }
 
-/*TABLET*/
+.carouselIndicator3{
+  transform: translate(100%, -50%);
+}
+
+}
+
+/*MEDIUM*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+  #mobNav{
+    display: none;
+  }
+
+  .logo{
+    height: 80px;
+  }
+
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .contentSm{
+    display: none;
+  }
+
+  .sectionIntro{
+    padding: 60px 0;
+  }
+
   .sectionInfo{
-    font-size: 0.7em;
-    line-height: 1.1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
     padding: 30px;
   }
+
 }
 
-/*MOBILE*/
+/*SMALL + XSMALL*/
+@media only screen and (max-width: 767px){
+
+  .logo{
+    height: 80px;
+  }
+
+  #mobNav{
+    cursor: pointer;
+    padding: 10px 0 0 0;
+    color: #464646;
+  }
+
+  #navMenu{
+    display: none;
+  }
+
+  nav a{
+    color: #464646;
+  }
+
+  .contentMd{
+    display: none;
+  }
+
+  .contentSm img{
+    width: 100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .sectionIntro p{
+    font-size: 1rem;
+    padding: 0 60px;
+  }
+
+}

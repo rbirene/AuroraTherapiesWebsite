@@ -21,42 +21,50 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!--links to stylesheets-->
     <link rel="stylesheet" href="stylesheets/general.css" type="text/css">
+		<!--links to Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Work+Sans" rel="stylesheet">
     <!--link to favicon-->
-    <link rel="shortcut icon" type="image/gif" href="images/favicon.gif"/>
-    <!--link to font awesome-->
+		<link rel="shortcut icon" type="image/gif" href="images/favicon.gif"/>
+		<!--link to font awesome-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
   <body>
 	<!--NAVIGATION-->
-  <nav>
-    <div class="container">
-      <div class="row justify-content-center">
-        <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
-      </div>
-      <div class="row justify-content-center">
-        <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
-      </div>
-      <div id="navMenu" class="row justify-content-center">
-          <a class="nav-link" href="about.html">About Us</a>
-          <div class="dropdown show">
-            <a class="nav-link" href="service.html" id="dropdownServiceMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Our Services
-            </a>
+  <div class="bannerContainer">
+    <nav>
+      <div class="container">
+        <div class="row justify-content-center">
+          <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
+        </div>
+        <div class="row justify-content-center">
+          <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
+        </div>
+        <div id="navMenu" class="row justify-content-center">
+            <a class="nav-link" href="about.html">About Us</a>
+            <div class="dropdown show">
+              <a class="nav-link" href="service.html" id="dropdownServiceMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our Services
+              </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownServiceMenu">
-              <a class="dropdown-item" href="beauty.html">Beauty Treatments</a>
-              <a class="dropdown-item" href="therapy.html">Complementary Therapies</a>
-              <a class="dropdown-item" href="offer.html">Special Offers</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownServiceMenu">
+                <a class="dropdown-item" href="beauty.html">Beauty Treatments</a>
+                <a class="dropdown-item" href="therapy.html">Complementary Therapies</a>
+                <a class="dropdown-item" href="offer.html">Special Offers</a>
+              </div>
             </div>
-          </div>
-          <!--<a class="nav-link" href="service.html">Our Services</a>-->
-          <a class="nav-link" href="restaurant.html">Our Restaurant</a>
-          <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="restaurant.html">Our Restaurant</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+        </div>
       </div>
+    </nav>
+
+  	<!--BANNER IMAGE-->
+    <div class="container-fluid">
+      <img class="bannerImg" src="images/aboutBanner.png">
     </div>
-  </nav>
+  </div>
 
 	<h1>About Us</h1>
 
@@ -73,7 +81,29 @@
 	<p>A massive investment programme, which resulted in the new pool and restaurant has just been completed in successfully fuses 19th century architecture of the original building with 21st century comfort.</p>
 
 	<!--FOOTER-->
+  <footer>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h6>Aurora Complementary Therapies</h6>
+          <p>Donaghadee Road,<br>Groomsport,<br>Bangor, BT19 6FH</p>
+          <p>028 90555555</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+      </div>
+    </div>
+  </footer>
 
+  <!--BOOTSTRAP JS SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   </body>
 
  </html>

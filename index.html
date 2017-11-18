@@ -22,7 +22,7 @@
     <!--links to stylesheets-->
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
 		<!--links to Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700|Work+Sans" rel="stylesheet">
     <!--link to favicon-->
 		<link rel="shortcut icon" type="image/gif" href="images/favicon.gif"/>
 		<!--link to font awesome-->
@@ -31,22 +31,6 @@
   </head>
 
   <body>
-	<!--NAVIGATION-->
-
-  <!--<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
-      </div>
-    </div>
-  </nav>-->
 
   <div class="navCarouselContainer">
     <nav>
@@ -82,16 +66,23 @@
       <div id="carouselIndicator" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="gradientOverlay">
-            <img class="d-block w-100" src="images/bannerImage1.png" alt="first slide image">
-          </div>
+          <div class="d-block w-100 carouselImages" style="background-image: url('images/bannerImage1.png');"></div>
+          <!--<img class="d-block w-100" src="images/bannerImage1.png" alt="first slide image">-->
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/bannerImage2.png" alt="second slide image">
+          <div class="d-block w-100 carouselImages" style="background-image: url('images/bannerImage2.png');"></div>
+          <!--<img class="d-block w-100" src="images/bannerImage2.png" alt="second slide image">-->
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/bannerImage3.png" alt="third slide image">
+          <div class="d-block w-100 carouselImages" style="background-image: url('images/bannerImage3.png');"></div>
+          <!--<img class="d-block w-100" src="images/bannerImage3.png" alt="third slide image">-->
         </div>
+        <div class="carouselHeading">
+          <h1 class="text-center">A Haven of Peace & Tranquility</h1>
+    			<p class="text-center">The beautiful coastline of Northern Ireland has inspired us to create a space which provides a beautiful feeling of restfulness and calm.
+    			We offer an extensive range of luxurious spa treatments delivered in beautiful treatment rooms by qualified and experienced therapists.</p>
+        </div>
+        <div class="carouselLine"></div>
         <div class="container">
           <div class="row justify-content-center">
             <span data-target="#carouselIndicator" data-slide-to="0" class="carouselIndicators carouselIndicator1"></span><span data-target="#carouselIndicator" data-slide-to="1" class="carouselIndicators carouselIndicator2"></span><span data-target="#carouselIndicator" data-slide-to="2" class="carouselIndicators carouselIndicator3"></span>
@@ -103,7 +94,7 @@
   </div>
 
 	<!--INTRO SECTION-->
-  <div class="sectionIntro">
+  <div id="sectionIntro">
   	<div class="container">
   		<div class="row justify-content-center">
   			<h1 class="text-center">A Haven of Peace & Tranquility</h1>

@@ -27,6 +27,10 @@ h1{
   height: 100px;
 }
 
+.bannerContainer{
+  position: relative;
+}
+
 nav{
   padding: 10px 0;
   font-size: 0.9rem;
@@ -34,7 +38,8 @@ nav{
 }
 
 nav a{
-  color: #464646;
+  /*color: #464646;*/
+  color: #fff;
   transition: 0.2s;
   margin: 5px 0 0 0;
 }
@@ -47,6 +52,12 @@ nav a:hover{
   border: none;
   border-radius: 0;
   font-size: 0.9rem;
+}
+
+/*BANNER IMAGE*/
+.bannerImg{
+  width: 100%;
+  height: auto;
 }
 
 /*FOOTER*/
@@ -74,6 +85,13 @@ footer a:hover{
     display: none;
   }
 
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
 }
 
 /*MEDIUM*/
@@ -85,6 +103,14 @@ footer a:hover{
 
   .logo{
     height: 80px;
+  }
+
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
   }
 
 }

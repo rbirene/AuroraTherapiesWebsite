@@ -1,0 +1,97 @@
+/* GENERAL / BY DEFAULT */
+.container-fluid{
+  padding: 0;
+}
+
+body{
+  font: 16px/24px 'Work Sans', sans-serif;
+  color: #464646;
+  overflow-x: hidden;
+}
+
+.sectionIntro{
+  padding: 100px 0;
+}
+
+.sectionIntro p{
+  font-size: 1.1rem;
+  padding: 0 90px;
+}
+
+.sectionInfo{
+  padding: 80px 40px;
+}
+
+.sectionImgs{
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.sectionSpa, .sectionRestaurant{
+  background: #131e28;
+  color: #fff;
+}
+
+h1, h2, h3{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+/*NAV*/
+nav{
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+nav a{
+  color: #464646;
+  transition: 0.2s;
+  margin: 5px 0 0 0;
+}
+
+nav a:hover{
+  color: #95ad3c;
+}
+
+.carouselIndicators{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  margin: 20px 3px 0 3px;
+  transition: 0.2s;
+}
+
+.carouselIndicators:hover{
+  background-color: #95ad3c;
+}
+
+.carousel-caption{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  bottom: 40%;
+  left: 5px;
+}
+
+.carousel-caption h3{
+  font-size: 5rem;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .sectionInfo{
+    font-size: 0.7em;
+    line-height: 1.1em;
+    padding: 30px;
+  }
+}
+
+/*MOBILE*/

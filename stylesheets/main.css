@@ -15,8 +15,7 @@ button{
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-family: 'Yeseva One', serif;
 }
 
 h1{
@@ -42,10 +41,16 @@ nav a{
   color: #fff;
   transition: 0.2s;
   margin: 5px 0 0 0;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 nav a:hover{
-  color: #78c2ec;
+  color: #fff;
+}
+
+.nav-link:hover{
+  border-bottom: 1px solid #fff;
 }
 
 .dropdown-menu{
@@ -90,42 +95,25 @@ footer a:hover{
 }
 
 .carouselHeading h1, .carouselHeading p{
-  width: 60%;
-}
-
-.carouselHeading h1{
-  font-style: italic;
-}
-
-.carouselLine{
-  border: 1px solid #fff;
-  /*text-shadow: 0 10px 10px rgba(0,0,0,.2);*/
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  width: 100%;
-  height: 0;
-}
-
-/*.carouselHeading h1, .carouselHeading p{
   margin: auto;
   width: 60%;
 }
 
 .carouselHeading h1{
   font-style: italic;
+  padding: 0 0 20px 0;
 }
 
 .carouselLine{
   border: 1px solid #fff;
   position: absolute;
-  top: 70%;
+  bottom: 0;
   left: 50%;
   width: 0;
-  height: 100%;
-}*/
+  height: 20%;
+}
 
-.carouselIndicators{
+/*.carouselIndicators{
 position: absolute;
 bottom: 20px;
 cursor: pointer;
@@ -151,18 +139,9 @@ transform: translate(-50%, -50%);
 
 .carouselIndicator3{
 transform: translate(100%, -50%);
-}
+}*/
 
 /*SECTIONS*/
-#sectionIntro{
-  padding: 100px 0;
-}
-
-#sectionIntro p{
-  font-size: 1.1rem;
-  padding: 0 90px;
-}
-
 .sectionInfo{
   padding: 80px 40px;
 }
@@ -179,20 +158,45 @@ transform: translate(100%, -50%);
 }
 
 .sectionOffers{
-  padding: 80px 0;
+  position: relative;
+}
+
+.offersLine1{
+  border: 1px solid #464646;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.offersLine2{
+  border: 1px solid #464646;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.sectionOffersInfo{
+  padding: 130px 0;
 }
 
 .sectionOffersBtn{
-  border-radius: 3px;
-  background-color: #78c2ec;
-  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0);
+  border: 1px solid #464646;
   padding: 5px 20px;
-  color: #fff;
+  color: #464646;
   transition: 0.2s;
+  margin: 20px 0 0 0;
 }
 
 .sectionOffersBtn:hover{
   background-color: #464646;
+  color: #fff;
 }
 
 /*LARGE + XLARGE*/
@@ -239,6 +243,18 @@ transform: translate(100%, -50%);
     width: 100%;
   }
 
+  .carouselHeading{
+    width: 70%;
+  }
+
+  .carouselHeading h1{
+    font-size: 2.5rem;
+  }
+
+  .carouselHeading p{
+    font-size: 0.9rem;
+  }
+
   .contentSm{
     display: none;
   }
@@ -274,6 +290,35 @@ transform: translate(100%, -50%);
 
   nav a{
     color: #464646;
+  }
+
+  nav a:hover{
+    color: #fff;
+  }
+
+  .nav-link:hover{
+    background-color: #464646;
+  }
+
+  .carouselHeading{
+    width: 90%;
+  }
+
+  .carouselHeading h1{
+    font-size: 2.5rem;
+  }
+
+  .carouselHeading p{
+    font-size: 0.9rem;
+  }
+
+  .carouselLine{
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 15%;
   }
 
   .contentMd{

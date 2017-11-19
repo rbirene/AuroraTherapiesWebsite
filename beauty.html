@@ -3,84 +3,290 @@
 
   <head>
 
-	<!--
-	Page Name: Beauty Treatments
-	Author: Irene Bhuiyan
-	Version: 1.0 (October 2017)
-	-->
+    <!--
+  	Page Name: Beauty Treatments
+  	Author: Irene Bhuiyan
+  	Version: 1.0 (October 2017)
+  	-->
 
-		<meta charset="UTF-8">
-		<meta name="description" content="add brief description">
-		<meta name="keywords" content="add keywords">
-		<meta name="author" content="Irene Bhuiyan">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  		<meta charset="UTF-8">
+  		<meta name="description" content="add brief description">
+  		<meta name="keywords" content="add keywords">
+  		<meta name="author" content="Irene Bhuiyan">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-    <title>Beauty Treatments | Aurora</title>
+      <title>Beauty Treatments | Aurora</title>
 
-    <!--link to bootstrap--->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!--links to stylesheets-->
-    <link rel="stylesheet" href="stylesheets/animate.css" type="text/css">
-    <link rel="stylesheet" href="stylesheets/froalaBlocks.css" type="text/css">
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
-		<!--links to Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700|Open+Sans" rel="stylesheet">
-    <!--link to favicon-->
-		<link rel="shortcut icon" type="image/gif" href="images/favicon.gif"/>
-		<!--link to font awesome-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--link to bootstrap--->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <!--link to froala-->
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.1/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.1/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+      <!--links to stylesheets-->
+      <link rel="stylesheet" href="stylesheets/general.css" type="text/css">
+  		<!--links to Google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Yeseva+One:400,500,600,700|Work+Sans" rel="stylesheet">
+      <!--link to favicon-->
+  		<link rel="shortcut icon" type="image/gif" href="images/favicon.gif"/>
+  		<!--link to font awesome-->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
+    </head>
 
-  <body>
-	<!--NAVIGATION-->
+    <body>
+  	<!--NAVIGATION-->
+    <div class="bannerContainer">
+      <nav>
+        <div class="container">
+          <div class="row justify-content-center">
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
+          </div>
+          <div class="row justify-content-center">
+            <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
+          </div>
+          <div id="navMenu" class="row justify-content-center">
+              <a class="nav-link" href="about.html">About Us</a>
+              <div class="dropdown show">
+                <a class="nav-link" href="service.html" id="dropdownServiceMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Our Services
+                </a>
 
-	<h1>Beauty Treatments</h1>
+                <div class="dropdown-menu" aria-labelledby="dropdownServiceMenu">
+                  <a class="dropdown-item" href="beauty.html">Beauty Treatments</a>
+                  <a class="dropdown-item" href="therapy.html">Complementary Therapies</a>
+                  <a class="dropdown-item" href="offer.html">Special Offers</a>
+                </div>
+              </div>
+              <!--<a class="nav-link" href="service.html">Our Services</a>-->
+              <a class="nav-link" href="restaurant.html">Our Restaurant</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </nav>
 
-	<!--INTRO-->
-	<p>Here at Aurora our friendly staff are always welcoming and will offer a personal, individual service to each and every client – Male or Female.</p>
-	<p>With our range of beauty treatments, you can achieve a complete makeover and leave our salon looking and feeling fantastic and revived. We employ specialists in many techniques and we ensure all our clients leave feeling pampered and revitalised.</p>
-	<p>Why chose Aurora:</p>
-	<ul>
-		<li>Competitively Priced</li>
-		<li>Specialist in several areas</li>
-		<li>Our therapists receive ongoing training</li>
-		<li>We constantly update our treatment menu</li>
-		<li>Friendly, Professional Service</li>
-	</ul>
-	<p>Why not indulge yourself in our relaxing beauty clinic. We have three calming beauty rooms, a makeup station, two nail stations and a separate tanning room. We guarantee you will leave our clinic looking and feeling fabulous.</p>
+    	<!--BANNER IMAGE-->
+      <section class="sectionBanner">
+        <div class="container-fluid">
+          <div class="bannerImg" style="background-image: url('images/aboutBanner.png');"></div>
+          <!--<img class="bannerImg" src="images/aboutBanner.png">-->
+          <h1 class="text-center">Beauty Treatments</h1>
+          <div class="bannerLine"></div>
+        </div>
+      </section>
+    </div>
 
-	<!--FACIAL-->
-	<h2>Endermolift LPG Facial</h2>
-	<p>Aurora Complementary Therapies is the first in Ireland to offer "state of the art" Lifting and Firming Facials with the new Cellu M6 Integral Machine. This exclusive anti-ageing technique re-densifies skin in depth to erase the signs of ageing.</p>
-	<p>LPG Lifts deliver micro-beats to the skin's surface to stimulate the youth cells (fibroblasts) in-depth, restarting their natural production of collagen and elastin.</p>
-	<p>A consultation with one of our therapists will help you choose from:</p>
-	<ul>
-		<li>Collagen Activator Firming Treatment</li>
-		<li>Densifying Anti-Wrinkle Treatment</li>
-		<li>Face Slimming Lift Treatment</li>
-		<li>Cellular Regeneration Lift Treatment</li>
-	</ul>
+  	<!--INTRO-->
+    <section class="sectionIntro">
+      <div class="container">
+        <div class="row">
+          <p>Here at Aurora our friendly staff are always welcoming and will offer a personal, individual service to each and every client – Male or Female.</p>
+        	<p>With our range of beauty treatments, you can achieve a complete makeover and leave our salon looking and feeling fantastic and revived. We employ specialists in many techniques and we ensure all our clients leave feeling pampered and revitalised.</p>
+        	<p>Why chose Aurora:</p>
+        	<ul>
+        		<li>Competitively Priced</li>
+        		<li>Specialist in several areas</li>
+        		<li>Our therapists receive ongoing training</li>
+        		<li>We constantly update our treatment menu</li>
+        		<li>Friendly, Professional Service</li>
+        	</ul>
+        	<p>Why not indulge yourself in our relaxing beauty clinic. We have three calming beauty rooms, a makeup station, two nail stations and a separate tanning room. We guarantee you will leave our clinic looking and feeling fabulous.</p>
+        </div>
+      </div>
+    </section>
 
-	<p>Price - £50 – 75 depending on the treatment.</p>
-	<p>Please call us on 028 92 345 321 for more information.</p>
+    <div class="container">
 
-	<!--MANICURE-->
-	<h2>Aurora Spa Manicure<br>Natural Nail Treatments</h2>
-	<p>When time is of the essence the Aurora Spa Manicure will leave your hands looking and feeling well groomed. Your nails are filed and cuticles are pushed back before a luxurious hand and arm exfoliation. A relaxing hand and arm massage follows, concluding with the application of the polish of your choice.</p>
-	<p>For the ultimate in hand and nail care why not go for the deluxe version. Your nails are filed then an invigorating lower arm and hand exfoliation is followed by an application of cuticle cream and a nourishing mask. Your hands are then placed into heated mittens for 5 - 10 minutes to aid the absorption of the deeply nourishing ingredients before your cuticles are pushed back. You will then enjoy a luxurious hand and arm massage before the application of the polish of your choice.</p>
-	<p>Price - £35</p>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <!--FACIAL-->
+        	<h2>Endermolift LPG Facial</h2>
+        	<p>Aurora Complementary Therapies is the first in Ireland to offer "state of the art" Lifting and Firming Facials with the new Cellu M6 Integral Machine. This exclusive anti-ageing technique re-densifies skin in depth to erase the signs of ageing.</p>
+        	<p>LPG Lifts deliver micro-beats to the skin's surface to stimulate the youth cells (fibroblasts) in-depth, restarting their natural production of collagen and elastin.</p>
+        	<p>A consultation with one of our therapists will help you choose from:</p>
+        	<ul>
+        		<li>Collagen Activator Firming Treatment</li>
+        		<li>Densifying Anti-Wrinkle Treatment</li>
+        		<li>Face Slimming Lift Treatment</li>
+        		<li>Cellular Regeneration Lift Treatment</li>
+        	</ul>
 
-	<!--MEN-->
-	<h2>Just for Men</h2>
-	<p>Here at Aurora we like to think that men care about how they look and feel as much as the ladies. All our Facials and Massage treatments are suitable for our male clients. We can also provide waxing, pedicures, detoxing and tanning treatments for men as well.</p>
-	<p>Why not treat yourself to a hot shave while you are having your treatments. We have an expert in house barber who can leave you feeling smooth and refreshed.</p>
-	<p>Prices the same as other treatments. Hot Shave - £25</p>
+        	<p>Price - £50 – 75 depending on the treatment.</p>
+        	<p>Please call us on 028 92 345 321 for more information.</p>
+        </div>
 
-	<!--TANNING-->
-	<h2>Spray Tanning</h2>
+        <div class="col-6">
+          <!--WAXING-->
+          <h2>Waxing</h2>
+          <p>Waxing is a method of semi-permanent hair removal which removes the hair from the root. The effects last for between 2-6 weeks – depending on the individual’s rate of hair growth, the time of year and how long you have been having the area waxed.</p>
+          <p>Warm wax is applied to the skin in a thin layer. The hair becomes embedded in the wax and a strip is applied and then pulled off quickly, in the opposite direction of the hair growth, taking the hair with it.</p>
+          <p>For smaller, delicate areas such as eyebrow shape, lip or chin an alternative method of tweezing could be used.</p>
+          <p>We offer a wide range of waxing services including:</p>
+            <ul>
+              <li>Bikini Waxing</li>
+              <li>Body Waxing</li>
+              <li>Facial Waxing</li>
+            </ul>
+          <p>Please call us on 028 92 345 321 for more information.</p>
+        </div>
+      </div>
 
-	<!--FOOTER-->
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <!--MANICURE-->
+        	<h2>Aurora Spa Manicure<br>Natural Nail Treatments</h2>
+        	<p>When time is of the essence the Aurora Spa Manicure will leave your hands looking and feeling well groomed. Your nails are filed and cuticles are pushed back before a luxurious hand and arm exfoliation. A relaxing hand and arm massage follows, concluding with the application of the polish of your choice.</p>
+        	<p>For the ultimate in hand and nail care why not go for the deluxe version. Your nails are filed then an invigorating lower arm and hand exfoliation is followed by an application of cuticle cream and a nourishing mask. Your hands are then placed into heated mittens for 5 - 10 minutes to aid the absorption of the deeply nourishing ingredients before your cuticles are pushed back. You will then enjoy a luxurious hand and arm massage before the application of the polish of your choice.</p>
+        	<p>Price - £35</p>
+        </div>
+
+        <div class="col-6">
+          <!--TANNING-->
+          <h2>Spray Tanning</h2>
+          <p>Glow Inside and Out...with a safe touch of sun at Aurora Complementary Therapies!</p>
+          <p>Our expert airbrush techniques can give you the perfect tan you’re looking for, even with our Northern Ireland weather!</p>
+          <p>We pride ourselves on providing our clients with the latest in tanning technology in Northern Ireland. Using superior sunless spray tanning products we aim to meet all your tanning needs.</p>
+          <p>At Aurora we bring you the luxurious Vita Liberata high performance, organic & non-toxic spray tan!</p>
+          <p>We also use a combination of alpha hydroxyl acids, fruit extracts and jojoba microspheres to deeply exfoliate the skin eliminating superficial and keratinized skin cells. An exceptional treatment for problem areas such as elbows and knees, giving you the best possible results.</p>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+          <div class="col-6">
+            <!--MEN-->
+            <h2>Just for Men</h2>
+            <p>Here at Aurora we like to think that men care about how they look and feel as much as the ladies. All our Facials and Massage treatments are suitable for our male clients. We can also provide waxing, pedicures, detoxing and tanning treatments for men as well.</p>
+            <p>Why not treat yourself to a hot shave while you are having your treatments. We have an expert in house barber who can leave you feeling smooth and refreshed.</p>
+            <p>Prices the same as other treatments. Hot Shave - £25</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--PRICES-->
+    <section class="sectionPrices">
+      <div class="container">
+        <h2 class="text-center">Prices</h2>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <h3>Endermolift LPG Facial</h3>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <h3>Aurora Spa Manicure</h3>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <h3>Just for Men</h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <button class="btn">£50 – 75</button>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <button class="btn">£35</button>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <button class="btn">£25</button>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <ul class="text-left">
+              <li>Collagen Activator Firming Treatment</li><br>
+              <li>Densifying Anti-Wrinkle Treatment</li><br>
+              <li>Face Slimming Lift Treatment</li><br>
+              <li>Cellular Regeneration Lift Treatment</li><br>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <p>Natural Nail Treatment</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-10">
+            <p>Hot Shave</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="fdb-block">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+
+          </div>
+        </div>
+
+        <div class="row mt-5 align-items-top align-self-start">
+          <div class="col-12 col-md-6 col-lg-5 m-auto col-xl-3 text-left align-self-start">
+            <div class="p-3 text-center">
+              <h2 class="font-weight-light">Endermolift LPG Facial</h2>
+              <p class="text-center"><a href="https://www.froala.com" class="btn btn-empty">£50 – 75</a></p>
+
+              <hr class="mt-5 mb-5">
+
+              <ul class="text-left">
+            		<li>Collagen Activator Firming Treatment</li><br>
+            		<li>Densifying Anti-Wrinkle Treatment</li><br>
+            		<li>Face Slimming Lift Treatment</li><br>
+            		<li>Cellular Regeneration Lift Treatment</li><br>
+            	</ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-10 col-md-6 col-lg-5 m-auto col-xl-3 text-left pt-5 pt-md-0 align-self-start">
+            <div class="p-3 text-center">
+              <h2 class="font-weight-light">Aurora Spa Manicure</h2>
+              <p class="text-center"><a href="https://www.froala.com" class="btn">£35</a></p>
+
+              <hr class="mt-5 mb-5">
+
+              <p>Natural Nail Treatment</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-10 col-md-6 col-lg-5 m-auto col-xl-3 text-left pt-5 pt-xl-0 align-self-start">
+            <div class="p-3 text-center">
+              <h2 class="font-weight-light">Just for Men</h2>
+              <p class="text-center"><a href="https://www.froala.com" class="btn btn-empty">£25</a></p>
+
+              <hr class="mt-5 mb-5">
+
+              <p>Hot Shave</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h6>Aurora Complementary Therapies</h6>
+            <p>53 Donaghadee Road,<br>Balloo Lower, Groomsport,<br>Bangor, BT19 6LH</p>
+            <p>028 92 345 321</p>
+            <p>info@auroraspa.com</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+          <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &nbsp; &nbsp;
+        </div>
+      </div>
+    </footer>
+
+  <!--BOOTSTRAP JS SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 
   </body>
 

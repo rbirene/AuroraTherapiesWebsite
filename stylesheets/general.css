@@ -14,21 +14,21 @@ button{
   cursor: pointer;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Yeseva One', serif;
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 7rem;
 }
 
 /*NAV*/
 .logo{
   height: 100px;
-}
-
-.bannerContainer{
-  position: relative;
 }
 
 nav{
@@ -38,26 +38,106 @@ nav{
 }
 
 nav a{
-  /*color: #464646;*/
   color: #fff;
   transition: 0.2s;
   margin: 5px 0 0 0;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 nav a:hover{
-  color: #78c2ec;
+  color: #fff;
 }
 
-.dropdown-menu{
+.nav-link:hover{
+  border-bottom: 1px solid #fff;
+}
+
+/*.dropdown-menu{
   border: none;
   border-radius: 0;
   font-size: 0.9rem;
+}*/
+
+#dropdownMenu{
+  border: none;
+  border-radius: 0;
+  font-size: 0.9rem;
+  display: none;
 }
 
-/*BANNER IMAGE*/
-.bannerImg{
+/*BANNER*/
+.bannerContainer{
+  position: relative;
+}
+
+/*.bannerImg{
   width: 100%;
   height: auto;
+}*/
+
+.bannerImg{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bannerLine{
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 35%;
+}
+
+.sectionBanner h1{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*INTRO*/
+.sectionIntro{
+  margin: auto;
+  width: 50%;
+  padding: 50px 0;
+}
+
+/*SECTIONS*/
+.sectionImgs{
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.sectionInfo{
+  padding: 100px 40px;
+}
+
+.sectionStandardsFuture{
+  margin: 100px 0;
+}
+
+.btn{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0);
+  border: 1px solid #464646;
+  border-radius: 0;
+  padding: 5px 20px;
+  color: #464646;
+  transition: 0.2s;
+  margin: 20px 0 0 0;
+}
+
+.btn:hover{
+  background-color: #464646;
+  color: #fff;
 }
 
 /*FOOTER*/
@@ -76,6 +156,14 @@ footer a{
 
 footer a:hover{
   color: #78c2ec;
+}
+
+.card{
+  border: none;
+}
+
+.card-img-top{
+  border-radius: 0;
 }
 
 /*LARGE + XLARGE*/

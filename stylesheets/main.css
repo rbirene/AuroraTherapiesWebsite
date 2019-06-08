@@ -7,17 +7,106 @@ body{
   font: 16px/24px 'Work Sans', sans-serif;
   color: #464646;
   overflow-x: hidden;
+  background-color: #fff;
 }
 
-.sectionIntro{
-  padding: 100px 0;
+button{
+  cursor: pointer;
 }
 
-.sectionIntro p{
-  font-size: 1.1rem;
-  padding: 0 90px;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Yeseva One', serif;
 }
 
+h1{
+  font-size: 3rem;
+}
+
+/*NAV*/
+.logo{
+  height: 100px;
+}
+
+.navCarouselContainer{
+  position: relative;
+}
+
+nav{
+  padding: 10px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+nav a{
+  color: #fff;
+  transition: 0.2s;
+  margin: 5px 0 0 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav a:hover{
+  color: #fff;
+}
+
+.nav-link:hover{
+  border-bottom: 1px solid #fff;
+}
+
+/*FOOTER*/
+footer{
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding: 60px 0;
+  background-color: #464646;
+  color: #fff;
+}
+
+footer a{
+  color: #fff;
+  transition: 0.2s;
+}
+
+footer a:hover{
+  color: #78c2ec;
+}
+
+/*CAROUSEL*/
+.carouselImages{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carouselHeading{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carouselHeading h1, .carouselHeading p{
+  margin: auto;
+  width: 60%;
+}
+
+.carouselHeading h1{
+  font-style: italic;
+  padding: 0 0 20px 0;
+}
+
+.carouselLine{
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+/*SECTIONS*/
 .sectionInfo{
   padding: 80px 40px;
 }
@@ -30,68 +119,189 @@ body{
 }
 
 .sectionSpa, .sectionRestaurant{
-  background: #131e28;
+  background: #f7f7f7;
+}
+
+.sectionOffers{
+  position: relative;
+}
+
+.offersLine1{
+  border: 1px solid #464646;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.offersLine2{
+  border: 1px solid #464646;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.sectionOffersInfo{
+  padding: 130px 0;
+}
+
+.sectionOffersBtn{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0);
+  border: 1px solid #464646;
+  padding: 5px 20px;
+  color: #464646;
+  transition: 0.2s;
+  margin: 20px 0 0 0;
+}
+
+.sectionOffersBtn:hover{
+  background-color: #464646;
   color: #fff;
 }
 
-h1, h2, h3{
-  font-family: 'Ubuntu', sans-serif;
+/*LARGE + XLARGE*/
+@media only screen and (min-width: 992px){
+
+  #mobNav{
+    display: none;
+  }
+
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .contentSm{
+    display: none;
+  }
+
+  .sectionIntro{
+    position: relative;
+  }
+
 }
 
-h1{
-  font-size: 3rem;
-}
-
-/*NAV*/
-nav{
-  padding: 10px 0;
-  font-size: 1.1rem;
-}
-
-nav a{
-  color: #464646;
-  transition: 0.2s;
-  margin: 5px 0 0 0;
-}
-
-nav a:hover{
-  color: #95ad3c;
-}
-
-.carouselIndicators{
-  cursor: pointer;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #dbdbdb;
-  margin: 20px 3px 0 3px;
-  transition: 0.2s;
-}
-
-.carouselIndicators:hover{
-  background-color: #95ad3c;
-}
-
-.carousel-caption{
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  bottom: 40%;
-  left: 5px;
-}
-
-.carousel-caption h3{
-  font-size: 5rem;
-}
-
-/*TABLET*/
+/*MEDIUM*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+  #mobNav{
+    display: none;
+  }
+
+  .logo{
+    height: 80px;
+  }
+
+  nav{
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .carouselHeading{
+    width: 70%;
+  }
+
+  .carouselHeading h1{
+    font-size: 2.5rem;
+  }
+
+  .carouselHeading p{
+    font-size: 0.9rem;
+  }
+
+  .contentSm{
+    display: none;
+  }
+
+  .sectionIntro{
+    padding: 60px 0;
+  }
+
   .sectionInfo{
-    font-size: 0.7em;
-    line-height: 1.1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
     padding: 30px;
   }
+
 }
 
-/*MOBILE*/
+/*SMALL + XSMALL*/
+@media only screen and (max-width: 767px){
+
+  .logo{
+    height: 80px;
+  }
+
+  #mobNav{
+    cursor: pointer;
+    padding: 10px 0 0 0;
+    color: #464646;
+  }
+
+  #navMenu{
+    display: none;
+  }
+
+  nav a{
+    color: #464646;
+  }
+
+  nav a:hover{
+    color: #fff;
+  }
+
+  .nav-link:hover{
+    background-color: #464646;
+  }
+
+  .carouselHeading{
+    width: 90%;
+  }
+
+  .carouselHeading h1{
+    font-size: 2.5rem;
+  }
+
+  .carouselHeading p{
+    font-size: 0.9rem;
+  }
+
+  .carouselLine{
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 15%;
+  }
+
+  .contentMd{
+    display: none;
+  }
+
+  .contentSm img{
+    width: 100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .sectionIntro p{
+    font-size: 1rem;
+    padding: 0 60px;
+  }
+
+}

@@ -1,8 +1,4 @@
 /* GENERAL / BY DEFAULT */
-.container-fluid{
-  padding: 0;
-}
-
 body{
   font: 16px/24px 'Work Sans', sans-serif;
   color: #464646;
@@ -22,13 +18,65 @@ h1{
   font-size: 3rem;
 }
 
-/*NAV*/
-.logo{
-  height: 100px;
+.grey-bg{
+  background: #f7f7f7;
 }
 
-.navCarouselContainer{
+.lines-section{
   position: relative;
+  padding: 130px 0;
+}
+
+.lines::before{
+  border: 1px solid #464646;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.lines::after{
+  border: 1px solid #464646;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+.btn-black-outline{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0);
+  border: 1px solid #464646;
+  padding: 5px 20px;
+  color: #464646;
+  transition: 0.2s;
+  margin: 20px 0 0 0;
+}
+
+.btn-black-outline:hover{
+  background-color: #464646;
+  color: #fff;
+}
+
+/*HEADER*/
+header{
+  color: #fff;
+}
+
+.bg{
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  padding: 230px 320px;
+}
+
+.logo{
+  height: 100px;
 }
 
 nav{
@@ -53,6 +101,37 @@ nav a:hover{
   border-bottom: 1px solid #fff;
 }
 
+header .heading h1, header .heading p{
+  margin: auto;
+  width: 60%;
+}
+
+header .heading h1{
+  font-style: italic;
+  padding: 0 0 20px 0;
+}
+
+header .line{
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 20%;
+}
+
+/*SECTIONS*/
+.sectionInfo{
+  padding: 80px 40px;
+}
+
+.sectionImgs{
+  background-position: center center;
+  background-size: cover;
+  height: 375px;
+  width: auto;
+}
+
 /*FOOTER*/
 footer{
   font-size: 0.9em;
@@ -71,99 +150,6 @@ footer a:hover{
   color: #78c2ec;
 }
 
-/*CAROUSEL*/
-.carouselImages{
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-}
-
-.carouselHeading{
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.carouselHeading h1, .carouselHeading p{
-  margin: auto;
-  width: 60%;
-}
-
-.carouselHeading h1{
-  font-style: italic;
-  padding: 0 0 20px 0;
-}
-
-.carouselLine{
-  border: 1px solid #fff;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 20%;
-}
-
-/*SECTIONS*/
-.sectionInfo{
-  padding: 80px 40px;
-}
-
-.sectionImgs{
-  background-position: center center;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-.sectionSpa, .sectionRestaurant{
-  background: #f7f7f7;
-}
-
-.sectionOffers{
-  position: relative;
-}
-
-.offersLine1{
-  border: 1px solid #464646;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 20%;
-}
-
-.offersLine2{
-  border: 1px solid #464646;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 20%;
-}
-
-.sectionOffersInfo{
-  padding: 130px 0;
-}
-
-.sectionOffersBtn{
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  background: rgba(255,255,255,0);
-  border: 1px solid #464646;
-  padding: 5px 20px;
-  color: #464646;
-  transition: 0.2s;
-  margin: 20px 0 0 0;
-}
-
-.sectionOffersBtn:hover{
-  background-color: #464646;
-  color: #fff;
-}
-
 /*LARGE + XLARGE*/
 @media only screen and (min-width: 992px){
 
@@ -177,14 +163,6 @@ footer a:hover{
     top: 0;
     z-index: 1;
     width: 100%;
-  }
-
-  .contentSm{
-    display: none;
-  }
-
-  .sectionIntro{
-    position: relative;
   }
 
 }
@@ -208,24 +186,16 @@ footer a:hover{
     width: 100%;
   }
 
-  .carouselHeading{
+  header .heading{
     width: 70%;
   }
 
-  .carouselHeading h1{
+  header .heading h1{
     font-size: 2.5rem;
   }
 
-  .carouselHeading p{
+  header .heading p{
     font-size: 0.9rem;
-  }
-
-  .contentSm{
-    display: none;
-  }
-
-  .sectionIntro{
-    padding: 60px 0;
   }
 
   .sectionInfo{
@@ -244,9 +214,11 @@ footer a:hover{
   }
 
   #mobNav{
-    cursor: pointer;
-    padding: 10px 0 0 0;
     color: #464646;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
   }
 
   #navMenu{
@@ -265,43 +237,29 @@ footer a:hover{
     background-color: #464646;
   }
 
-  .carouselHeading{
-    width: 90%;
+  .bg{
+    padding: 80px 0;
   }
 
-  .carouselHeading h1{
+  header .heading h1{
     font-size: 2.5rem;
   }
 
-  .carouselHeading p{
+  header .heading p{
     font-size: 0.9rem;
   }
 
-  .carouselLine{
+  header .line{
     border: 1px solid #fff;
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 15%;
-  }
-
-  .contentMd{
-    display: none;
-  }
-
-  .contentSm img{
-    width: 100%;
-    height: auto;
+    height: 140px;
   }
 
   h1{
     font-size: 2rem;
-  }
-
-  .sectionIntro p{
-    font-size: 1rem;
-    padding: 0 60px;
   }
 
 }

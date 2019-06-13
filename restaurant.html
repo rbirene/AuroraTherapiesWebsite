@@ -25,34 +25,39 @@
 
 <body>
 
-	<!--NAVIGATION-->
-  <div class="bannerContainer">
-    <nav>
-      <div class="container">
-        <div class="row justify-content-center">
-          <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
-        </div>
-        <div class="row justify-content-center">
-          <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
-        </div>
-        <div id="navMenu" class="row justify-content-center">
-            <a class="nav-link" href="about.html">About Us</a>
-            <a class="nav-link" href="service.html">Our Services</a>
-            <a class="nav-link" href="restaurant.html">Our Restaurant</a>
-            <a class="nav-link" href="contact.html">Contact Us</a>
+  <header>
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-12">
+          <nav>
+            <div class="row">
+              <div class="col-12">
+                <div class="logo d-flex justify-content-center">
+                  <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
+                </div>
+                <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
+                <div id="navMenu" class="row justify-content-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="service.html">Our Services</a>
+                  <a class="nav-link" href="restaurant.html">Our Restaurant</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="sectionBanner">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center align-items-center bg" style="background-image: url('images/restaurantBanner.png');">
+                <h1 class="text-center">Restaurant</h1>
+              </div>
+              <div class="line"></div>
+            </div>
+          </section>
         </div>
       </div>
-    </nav>
-
-  	<!--BANNER IMAGE-->
-    <section class="sectionBanner">
-      <div class="container-fluid">
-        <div class="bannerImg" style="background-image: url('images/restaurantBanner.png');"></div>
-        <h1 class="text-center">Restaurant</h1>
-        <div class="bannerLine"></div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </header>
 
 	<!--INTRO-->
   <section class="sectionIntro">
@@ -65,119 +70,57 @@
   </section>
 
   <!--MENU-->
-  <section class="sectionMenu">
+
+  <section class="sectionMenuOptions">
     <div class="container-fluid">
-      <div class="menuImg" style="background-image: url('images/restaurantBanner.png');"></div>
-      <div class="sectionMenuOptions">
-        <a href="#sectionBreakfast"><button class="btn">Breakfast</button></a>
-        <a href="#sectionLunch"><button class="btn">Lunch</button></a>
-        <a href="#sectionDinner"><button class="btn">Dinner</button></a>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center flex-wrap menuImg" style="background-image: url('images/restaurantBanner.png');">
+          <a href="#sectionBreakfast"><button class="btn">Breakfast</button></a>
+          <a href="#sectionLunch"><button class="btn">Lunch</button></a>
+          <a href="#sectionDinner"><button class="btn">Dinner</button></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="sectionOverallMenuMd">
-    <section id="sectionBreakfast">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Super Breakfast Buffet</h2>
-            <p>Served daily in the brasserie, the Super Breakfast Buffet includes everything you need to start the day on the right foot. This signature breakfast spread ranges from smoked salmon and fresh fruit to yogurts and cereals. Fresh-brewed coffee and a vast selection of teas are also available.</p>
-            <p>06:30 - 10:30 (Daily)</p>
-          </div>
-          <div class="col-md-6">
-            <img src="images/restaurant3.png" alt="breakfast in the restaurant">
-          </div>
+  <section class="menu">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img src="images/restaurant3.png" alt="breakfast in the restaurant">
+        </div>
+        <div class="col-12 col-md-6 sectionInfo">
+          <h2>Super Breakfast Buffet</h2>
+          <p>Served daily in the brasserie, the Super Breakfast Buffet includes everything you need to start the day on the right foot. This signature breakfast spread ranges from smoked salmon and fresh fruit to yogurts and cereals. Fresh-brewed coffee and a vast selection of teas are also available.</p>
+          <p>06:30 - 10:30 (Daily)</p>
         </div>
       </div>
-    </section>
-
-    <section id="sectionLunch">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/restaurant4.png" alt="breakfast in the restaurant">
-          </div>
-          <div class="col-md-6">
-            <h2>Lunch</h2>
-            <p>Nesoi features traditional Irish dishes as well as popular international favourites. Savour fresh seafood caught locally or delve into a plate of classic Colcannon and Pork.</p>
-            <p>Meals can be enjoyed in the stylish atmosphere of the dining room or on the heated outdoor terrace, complete with a superb view of the Co. Down Coast.</p>
-            <p>Click below to download our lunch menu.</p>
-            <button class="btn"><a href="files/lunchMenu.pdf">lunch menu</a></button>
-          </div>
+      <div class="row">
+        <div class="col-12 col-md-6 order-md-2 d-flex justify-content-center">
+          <img src="images/restaurant4.png" alt="breakfast in the restaurant">
+        </div>
+        <div class="col-12 col-md-6 order-md-1 sectionInfo">
+          <h2>Lunch</h2>
+          <p>Nesoi features traditional Irish dishes as well as popular international favourites. Savour fresh seafood caught locally or delve into a plate of classic Colcannon and Pork.</p>
+          <p>Meals can be enjoyed in the stylish atmosphere of the dining room or on the heated outdoor terrace, complete with a superb view of the Co. Down Coast.</p>
+          <p>Click below to download our lunch menu.</p>
+          <a href="files/lunchMenu.pdf" class="d-flex justify-content-center"><button class="btn">lunch menu</button></a>
         </div>
       </div>
-    </section>
-
-    <section id="sectionDinner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Dinner</h2>
-            <p>Nesoi welcomes diners for dinner every evening from 6.30pm. We serve fabulous fine dining alongside traditional brasserie style cuisine, and provide the perfect venue for an intimate dinner, a corporate lunch or a private party.</p>
-            <p>Our award-winning Chef, Michael Johnston, prepares seasonal menus filled with the finest locally sourced and organic produce to create beautiful dishes bursting with taste and presented with flair.</p>
-            <p>Click below to download our dinner menu.</p>
-            <button class="btn"><a href="files/dinnerMenu.pdf">dinner menu</a></button>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="images/restaurant5.png" alt="breakfast in the restaurant">
-          </div>
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <img src="images/restaurant5.png" alt="breakfast in the restaurant">
+        </div>
+        <div class="col-12 col-md-6 sectionInfo">
+          <h2>Dinner</h2>
+          <p>Nesoi welcomes diners for dinner every evening from 6.30pm. We serve fabulous fine dining alongside traditional brasserie style cuisine, and provide the perfect venue for an intimate dinner, a corporate lunch or a private party.</p>
+          <p>Our award-winning Chef, Michael Johnston, prepares seasonal menus filled with the finest locally sourced and organic produce to create beautiful dishes bursting with taste and presented with flair.</p>
+          <p>Click below to download our dinner menu.</p>
+          <a href="files/dinnerMenu.pdf" class="d-flex justify-content-center"><button class="btn">dinner menu</button></a>
         </div>
       </div>
-    </section>
+    </div>
   </section>
-
-  <section class="sectionOverallMenuSm">
-    <section id="sectionBreakfast">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>Super Breakfast Buffet</h2>
-            <p>Served daily in the brasserie, the Super Breakfast Buffet includes everything you need to start the day on the right foot. This signature breakfast spread ranges from smoked salmon and fresh fruit to yogurts and cereals. Fresh-brewed coffee and a vast selection of teas are also available.</p>
-            <p>06:30 - 10:30 (Daily)</p>
-          </div>
-          <div class="col-sm-12">
-            <img src="images/restaurant3.png" alt="breakfast in the restaurant">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sectionLunch">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>Lunch</h2>
-            <p>Nesoi features traditional Irish dishes as well as popular international favourites. Savour fresh seafood caught locally or delve into a plate of classic Colcannon and Pork.</p>
-            <p>Meals can be enjoyed in the stylish atmosphere of the dining room or on the heated outdoor terrace, complete with a superb view of the Co. Down Coast.</p>
-            <p>Click below to download our lunch menu.</p>
-            <button class="btn"><a href="files/lunchMenu.pdf">lunch menu</a></button>
-          </div>
-          <div class="col-sm-12">
-            <img src="images/restaurant4.png" alt="breakfast in the restaurant">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sectionDinner">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>Dinner</h2>
-            <p>Nesoi welcomes diners for dinner every evening from 6.30pm. We serve fabulous fine dining alongside traditional brasserie style cuisine, and provide the perfect venue for an intimate dinner, a corporate lunch or a private party.</p>
-            <p>Our award-winning Chef, Michael Johnston, prepares seasonal menus filled with the finest locally sourced and organic produce to create beautiful dishes bursting with taste and presented with flair.</p>
-            <p>Click below to download our dinner menu.</p>
-            <button class="btn"><a href="files/dinnerMenu.pdf">dinner menu</a></button>
-          </div>
-          <div class="col-sm-12">
-            <img src="images/restaurant5.png" alt="breakfast in the restaurant">
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
 
   <section class="sectionRestaurantOpen">
     <div class="container">

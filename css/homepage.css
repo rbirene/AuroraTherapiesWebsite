@@ -128,7 +128,7 @@ header .line{
 .sectionImgs{
   background-position: center center;
   background-size: cover;
-  height: 375px;
+  min-height: 375px;
   width: auto;
 }
 

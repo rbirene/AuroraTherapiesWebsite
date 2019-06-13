@@ -26,7 +26,7 @@ body{
   padding: 5px 20px;
   color: #464646;
   transition: 0.2s;
-  margin: 20px 0 0 0;
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -45,24 +45,20 @@ body{
   color: #fff;
 }
 
-.container-fluid{
-  padding: 0;
-}
-
 h1, h2, h3, h4, h5, h6{
   font-family: 'Yeseva One', serif;
 }
 
 h1{
-  font-size: 7em;
+  font-size: 112px;
 }
 
 h2{
-  font-size: 5rem;
+  font-size: 80px;
 }
 
 h3{
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 h4{
@@ -116,7 +112,7 @@ h6{
   color: #696969;
 }
 
-/*NAV*/
+/*HEADER*/
 .logo{
   height: 100px;
 }
@@ -143,33 +139,28 @@ nav a:hover{
   border-bottom: 1px solid #fff;
 }
 
-/*BANNER*/
 .bannerContainer{
   position: relative;
 }
 
-.bannerImg{
+.bg{
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
 }
 
-.bannerLine{
+header .line{
   border: 1px solid #fff;
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 30%;
+  height: 20%;
 }
 
 .sectionBanner h1{
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /*INTRO*/
@@ -182,17 +173,13 @@ nav a:hover{
 /*SECTIONS*/
 .sectionImgs{
   background-position: center center;
-  width: 100%;
-  height: auto;
   background-size: cover;
+  height: 375px;
+  width: auto;
 }
 
 .sectionInfo{
   padding: 100px 40px;
-}
-
-.sectionStandardsFuture{
-  margin: 100px 0;
 }
 
 /*CARD*/
@@ -240,10 +227,10 @@ nav a:hover{
 
 /*RESTAURANT*/
 .menuImg{
-  width: 100%;
-  height: 200px;
   background-size: cover;
   background-position: center center;
+  margin: 0 0 80px 0;
+  padding: 40px 0;
 }
 
 .sectionMenu{
@@ -251,10 +238,7 @@ nav a:hover{
 }
 
 .sectionMenuOptions{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
 }
 
 .sectionMenuOptions .btn{
@@ -269,28 +253,19 @@ nav a:hover{
   color: #464646;
 }
 
-#sectionBreakfast img, #sectionLunch img, #sectionDinner img{
+section.menu img{
   width: 90%;
   height: auto;
 }
 
-#sectionBreakfast, #sectionLunch, #sectionDinner{
-  margin: 100px 0 100px 0;
-}
-
-#sectionLunch .btn, #sectionDinner .btn{
-  margin: 0 0 30px 0;
-}
-
 .sectionRestaurantOpen{
-  margin: 0 0 100px 0;
+  margin: 100px 0 0 0;
 }
 
 /*SERVICE*/
 .serviceMenu{
   background-color: #464646;
   width: 100%;
-  padding: 0 0 20px 0;
   margin: 0 0 100px 0;
 }
 
@@ -472,14 +447,28 @@ footer a:hover{
 /*SMALL + XSMALL*/
 @media only screen and (max-width: 767px){
 
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+
   .logo{
     height: 80px;
   }
 
   #mobNav{
-    cursor: pointer;
-    padding: 10px 0 0 0;
     color: #464646;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
   }
 
   #navMenu{
@@ -498,17 +487,31 @@ footer a:hover{
     background-color: #464646;
   }
 
+  .bg{
+    height: 400px;
+    width: auto;
+  }
+
   .sectionIntro{
     margin: auto;
     width: 70%;
     padding: 50px 0;
   }
 
+  .sectionInfo{
+    padding: 40px;
+  }
+
   .sectionMenu{
     display: none;
   }
 
-  #sectionBreakfast img, #sectionLunch img, #sectionDinner img{
+  .beautyImg{
+    height: 300px;
+    margin: 0;
+  }
+
+  section.menu img{
     width: 100%;
     height: auto;
   }

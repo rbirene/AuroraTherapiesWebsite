@@ -31,41 +31,48 @@
 
 <body>
 
-  <!--NAVIGATION-->
-  <div class="bannerContainer">
-    <nav>
-      <div class="container">
-        <div class="row justify-content-center">
-          <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
-        </div>
-        <div class="row justify-content-center">
-          <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
-        </div>
-        <div id="navMenu" class="row justify-content-center">
-          <a class="nav-link" href="about.html">About Us</a>
-          <a class="nav-link" href="service.html">Our Services</a>
-          <a class="nav-link" href="restaurant.html">Our Restaurant</a>
-          <a class="nav-link" href="contact.html">Contact Us</a>
+  <header>
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-12">
+          <nav>
+            <div class="row">
+              <div class="col-12">
+                <div class="logo d-flex justify-content-center">
+                  <a href="index.html"><img src="images/logo.png" class="logo" alt="Aurora logo"></a>
+                </div>
+                <span id="mobNav" class="fa fa-bars fa-2x" aria-hidden="true"></span>
+                <div id="navMenu" class="row justify-content-center">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="service.html">Our Services</a>
+                  <a class="nav-link" href="restaurant.html">Our Restaurant</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="sectionBanner">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center align-items-center bg" style="background-image: url('images/aboutBanner.png');">
+                <h1 class="text-center">About Us</h1>
+              </div>
+              <div class="line"></div>
+            </div>
+          </section>
         </div>
       </div>
-    </nav>
-
-    <!--BANNER IMAGE-->
-    <section class="sectionBanner">
-      <div class="container-fluid">
-        <div class="bannerImg" style="background-image: url('images/aboutBanner.png');"></div>
-        <h1 class="text-center">About Us</h1>
-        <div class="bannerLine"></div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </header>
 
   <!--INTRO-->
   <section class="sectionIntro">
     <div class="container">
       <div class="row">
-        <p>There's something indescribably magical about the Co. Down coast. Perched on the shore amongst rolling grounds, shaded by trees with views over Belfast Lough, Aurora Complementary Therapies effortlessly sets the scene for an experience less ordinary.</p>
-        <p>Our sumptuous interiors are carefully designed to remove all cares and to encourage guests to immerse themselves in the atmosphere of relaxation. Unobtrusive and calm, the staff are elegantly trained to make your stay as memorable as possible. Just as importantly though, there's endless opportunity for comfortable solitude for anyone seeking time out.</p>
+        <div class="col-12">
+          <p>There's something indescribably magical about the Co. Down coast. Perched on the shore amongst rolling grounds, shaded by trees with views over Belfast Lough, Aurora Complementary Therapies effortlessly sets the scene for an experience less ordinary.</p>
+          <p>Our sumptuous interiors are carefully designed to remove all cares and to encourage guests to immerse themselves in the atmosphere of relaxation. Unobtrusive and calm, the staff are elegantly trained to make your stay as memorable as possible. Just as importantly though, there's endless opportunity for comfortable solitude for anyone seeking time out.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -73,17 +80,17 @@
   <section class="sectionStandardsFuture">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-6 order-md-2 sectionImgs" style="background-image: url('images/reception.png');"></div>
+        <div class="col-12 col-md-6 order-md-1">
           <div class="sectionInfo">
             <h2>Our Standards</h2>
             <p>At Aurora, we set very high standards in all of our operations so that our guests can feel that their visit is both memorable and effortlessly revitalising.  Visitors enjoy the very best of spa technology, nestled on the beautiful Northern Irish coast.</p>
           </div>
         </div>
-        <div class="col sectionImgs" style="background-image: url('images/reception.png');"></div>
       </div>
       <div class="row">
-        <div class="col sectionImgs" style="background-image: url('images/restaurant2.png');"></div>
-        <div class="col">
+        <div class="col-12 col-md-6 sectionImgs" style="background-image: url('images/restaurant2.png');"></div>
+        <div class="col-12 col-md-6">
           <div class="sectionInfo">
             <h2>Investing in the Future</h2>
             <p>A massive investment programme, which resulted in the new pool and restaurant has just been completed in successfully fuses 19th century architecture of the original building with 21st century comfort.</p>
